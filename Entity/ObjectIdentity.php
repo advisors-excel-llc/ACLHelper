@@ -6,7 +6,7 @@
  * Time: 11:02 AM
  */
 
-namespace Curiosity26\AclHelperBundle\Entity;
+namespace AE\AclHelperBundle\Entity;
 
 class ObjectIdentity
 {

@@ -6,7 +6,7 @@
  * Time: 3:34 PM
  */
 
-namespace Curiosity26\AclHelperBundle\Doctrine\DQL;
+namespace AE\AclHelperBundle\Doctrine\DQL;
 
 use Doctrine\ORM\Query\AST\Functions\FunctionNode;
 use Doctrine\ORM\Query\AST\InputParameter;

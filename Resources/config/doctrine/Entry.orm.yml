@@ -1,4 +1,4 @@
-Curiosity26\AclHelperBundle\Entity\Entry:
+AE\AclHelperBundle\Entity\Entry:
     table: "acl_entries"
     type: entity
     readOnly: true
@@ -33,7 +33,7 @@ Curiosity26\AclHelperBundle\Entity\Entry:
             type: boolean
     manyToOne:
         class:
-            targetEntity: 'Curiosity26\AclHelperBundle\Entity\AclClass'
+            targetEntity: 'AE\AclHelperBundle\Entity\AclClass'
             cascade: ["persist"]
             joinColumns:
                 class_id:
@@ -42,14 +42,14 @@ Curiosity26\AclHelperBundle\Entity\Entry:
                         unsigned: true
             nullable: false
         objectIdentity:
-            targetEntity: 'Curiosity26\AclHelperBundle\Entity\ObjectIdentity'
+            targetEntity: 'AE\AclHelperBundle\Entity\ObjectIdentity'
             casade: ['persist']
             joinColumns:
                 object_identity_id:
                     options:
                         unsigned: true
         securityIdentity:
-            targetEntity: 'Curiosity26\AclHelperBundle\Entity\SecurityIdentity'
+            targetEntity: 'AE\AclHelperBundle\Entity\SecurityIdentity'
             cascade: ["persist"]
             joinColumns:
                 security_identity_id:

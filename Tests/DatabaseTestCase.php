@@ -6,7 +6,7 @@
  * Time: 6:07 PM
  */
 
-namespace Curiosity26\AclHelperBundle\Tests;
+namespace AE\AclHelperBundle\Tests;
 
 use Doctrine\Bundle\DoctrineBundle\Registry;
 use Doctrine\ORM\EntityManager;

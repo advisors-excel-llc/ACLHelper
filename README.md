@@ -20,8 +20,8 @@ edit, delete and view, `ROLE_USER` users can just view.
 
 namespace App\Controller;
 
-use Curiosity26\AclHelperBundle\Helper\AclHelper;
-use Curiosity26\AclHelperBundle\Tests\Entity\TestObject;
+use AE\AclHelperBundle\Helper\AclHelper;
+use AE\AclHelperBundle\Tests\Entity\TestObject;
 use Symfony\Component\Security\Acl\Permission\BasicPermissionMap;
 
 class MyController extends FOSRestController implements ClassResourceInterface {
@@ -70,8 +70,8 @@ that allows the ACL to be found/created and ACEs to be inserted, updated or dele
 
 namespace App\Controller;
 
-use Curiosity26\AclHelperBundle\Helper\AclHelper;
-use Curiosity26\AclHelperBundle\Tests\Entity\TestObject;
+use AE\AclHelperBundle\Helper\AclHelper;
+use AE\AclHelperBundle\Tests\Entity\TestObject;
 use Symfony\Component\Security\Acl\Domain\UserSecurityIdentity;
 use Symfony\Component\Security\Acl\Domain\RoleSecurityIdentity;
 use Symfony\Component\Security\Acl\Permission\MaskBuilder;

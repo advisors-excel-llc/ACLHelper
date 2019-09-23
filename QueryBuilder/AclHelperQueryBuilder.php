@@ -6,12 +6,12 @@
  * Time: 11:16 AM
  */
 
-namespace Curiosity26\AclHelperBundle\QueryBuilder;
+namespace AE\AclHelperBundle\QueryBuilder;
 
-use Curiosity26\AclHelperBundle\Entity\AclClass;
-use Curiosity26\AclHelperBundle\Entity\Entry;
-use Curiosity26\AclHelperBundle\Entity\ObjectIdentity;
-use Curiosity26\AclHelperBundle\Entity\SecurityIdentity;
+use AE\AclHelperBundle\Entity\AclClass;
+use AE\AclHelperBundle\Entity\Entry;
+use AE\AclHelperBundle\Entity\ObjectIdentity;
+use AE\AclHelperBundle\Entity\SecurityIdentity;
 use Doctrine\DBAL\Platforms\PostgreSqlPlatform;
 use Doctrine\DBAL\Platforms\SqlitePlatform;
 use Doctrine\ORM\EntityManagerInterface;

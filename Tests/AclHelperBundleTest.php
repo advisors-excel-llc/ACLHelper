@@ -6,15 +6,15 @@
  * Time: 2:53 PM
  */
 
-namespace Curiosity26\AclHelperBundle\Tests;
+namespace AE\AclHelperBundle\Tests;
 
-use Curiosity26\AclHelperBundle\Entity\AclClass;
-use Curiosity26\AclHelperBundle\Entity\Entry;
-use Curiosity26\AclHelperBundle\Entity\ObjectIdentity;
-use Curiosity26\AclHelperBundle\Entity\SecurityIdentity;
-use Curiosity26\AclHelperBundle\Helper\AclHelper;
-use Curiosity26\AclHelperBundle\QueryBuilder\AclHelperQueryBuilder;
-use Curiosity26\AclHelperBundle\Tests\Entity\TestObject;
+use AE\AclHelperBundle\Entity\AclClass;
+use AE\AclHelperBundle\Entity\Entry;
+use AE\AclHelperBundle\Entity\ObjectIdentity;
+use AE\AclHelperBundle\Entity\SecurityIdentity;
+use AE\AclHelperBundle\Helper\AclHelper;
+use AE\AclHelperBundle\QueryBuilder\AclHelperQueryBuilder;
+use AE\AclHelperBundle\Tests\Entity\TestObject;
 use Symfony\Component\Security\Acl\Domain\PermissionGrantingStrategy;
 use Symfony\Component\Security\Acl\Domain\RoleSecurityIdentity;
 use Symfony\Component\Security\Acl\Domain\UserSecurityIdentity;

@@ -5,7 +5,7 @@
          stopOnFailure="false">
     <php>
         <env name="KERNEL_CLASS"
-             value="Curiosity26\AclHelperBundle\Tests\Kernel"
+             value="AE\AclHelperBundle\Tests\Kernel"
         />
         <ini name="error_reporting" value="-1" />
     </php>

@@ -1,6 +1,6 @@
 <?php
 
-namespace Curiosity26\AclHelperBundle\Tests\Entity;
+namespace AE\AclHelperBundle\Tests\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -16,7 +16,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Class TestObject
  *
- * @package Curiosity26\AclHelperBundle\Tests\Entity
+ * @package AE\AclHelperBundle\Tests\Entity
  * @ORM\Entity()
  * @ORM\Table(name="test_object")
  */
@@ -38,13 +38,13 @@ class TestObject
 
     /**
      * @var TestObject|null
-     * @ORM\ManyToOne(targetEntity="Curiosity26\AclHelperBundle\Tests\Entity\TestObject", inversedBy="parent")
+     * @ORM\ManyToOne(targetEntity="AE\AclHelperBundle\Tests\Entity\TestObject", inversedBy="parent")
      */
     private $parent;
 
     /**
      * @var Collection|TestObject[]
-     * @ORM\OneToMany(targetEntity="Curiosity26\AclHelperBundle\Tests\Entity\TestObject", mappedBy="parent",
+     * @ORM\OneToMany(targetEntity="AE\AclHelperBundle\Tests\Entity\TestObject", mappedBy="parent",
      *     cascade={"all"})
      */
     private $children;

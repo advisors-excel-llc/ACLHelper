@@ -6,18 +6,18 @@
  * Time: 2:00 PM
  */
 
-namespace Curiosity26\AclHelperBundle\DependencyInjection;
+namespace AE\AclHelperBundle\DependencyInjection;
 
-use Curiosity26\AclHelperBundle\DependencyInjection\Configuration\Configuration;
-use Curiosity26\AclHelperBundle\Doctrine\DQL\CastAsInt;
-use Curiosity26\AclHelperBundle\Helper\AclHelper;
+use AE\AclHelperBundle\DependencyInjection\Configuration\Configuration;
+use AE\AclHelperBundle\Doctrine\DQL\CastAsInt;
+use AE\AclHelperBundle\Helper\AclHelper;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-class Curiosity26AclHelperExtension extends Extension implements PrependExtensionInterface
+class AEAclHelperExtension extends Extension implements PrependExtensionInterface
 {
     /**
      * @param array $configs

@@ -6,7 +6,7 @@
  * Time: 12:30 PM
  */
 
-namespace Curiosity26\AclHelperBundle\Helper;
+namespace AE\AclHelperBundle\Helper;
 
 use Symfony\Component\Security\Acl\Domain\Entry;
 use Symfony\Component\Security\Acl\Domain\ObjectIdentity;
@@ -19,7 +19,7 @@ use Symfony\Component\Security\Acl\Model\SecurityIdentityInterface;
 /**
  * Class AclManager
  *
- * @package Curiosity26\AclHelperBundle\Helper
+ * @package AE\AclHelperBundle\Helper
  */
 class AclManager
 {

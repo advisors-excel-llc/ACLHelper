@@ -6,11 +6,11 @@
  * Time: 10:31 AM
  */
 
-namespace Curiosity26\AclHelperBundle;
+namespace AE\AclHelperBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class Curiosity26AclHelperBundle extends Bundle
+class AEAclHelperBundle extends Bundle
 {
 
 }

@@ -6,7 +6,7 @@
  * Time: 6:05 PM
  */
 
-namespace Curiosity26\AclHelperBundle\Tests;
+namespace AE\AclHelperBundle\Tests;
 
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase as TestCase;
 
