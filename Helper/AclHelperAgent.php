@@ -229,6 +229,8 @@ class AclHelperAgent
             $predicate->add(self::parseComplexPredicate($qb, $prefix, $field, $value));
         } elseif ($value instanceof Expr) {
             $predicate->add($value);
+        } elseif (!$value) {
+            $predicate->add("$prefix.$field IS NULL");
         } else {
             $predicate->add("$prefix.$field = :$field");
             $qb->setParameter(":$field", $value);
