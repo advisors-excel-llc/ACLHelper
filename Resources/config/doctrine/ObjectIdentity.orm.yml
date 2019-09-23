@@ -1,4 +1,4 @@
-Curiosity26\AclHelperBundle\Entity\ObjectIdentity:
+AE\AclHelperBundle\Entity\ObjectIdentity:
     table: "acl_object_identities"
     type: entity
     readOnly: true
@@ -15,7 +15,7 @@ Curiosity26\AclHelperBundle\Entity\ObjectIdentity:
             type: boolean
     manyToOne:
         class:
-            targetEntity: 'Curiosity26\AclHelperBundle\Entity\AclClass'
+            targetEntity: 'AE\AclHelperBundle\Entity\AclClass'
             cascade: ["persist"]
             joinColumns:
                 class_id:
@@ -23,14 +23,14 @@ Curiosity26\AclHelperBundle\Entity\ObjectIdentity:
                     options:
                         unsigned: true
         parentObjectIdentity:
-            targetEntity: 'Curiosity26\AclHelperBundle\Entity\ObjectIdentity'
+            targetEntity: 'AE\AclHelperBundle\Entity\ObjectIdentity'
             joinColumns:
                 parent_object_identity_id:
                     options:
                         unsigned: true
     manyToMany:
         ancestor:
-            targetEntity: 'Curiosity26\AclHelperBundle\Entity\ObjectIdentity'
+            targetEntity: 'AE\AclHelperBundle\Entity\ObjectIdentity'
             joinTable:
                 name: acl_object_identity_ancestors
                 joinColumns:

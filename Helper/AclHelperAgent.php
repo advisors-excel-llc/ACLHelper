@@ -6,9 +6,9 @@
  * Time: 11:31 AM
  */
 
-namespace Curiosity26\AclHelperBundle\Helper;
+namespace AE\AclHelperBundle\Helper;
 
-use Curiosity26\ACLHelperBundle\QueryBuilder\AclHelperQueryBuilder;
+use AE\AclHelperBundle\QueryBuilder\AclHelperQueryBuilder;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Mapping\ClassMetadata;

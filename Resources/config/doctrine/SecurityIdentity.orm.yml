@@ -1,4 +1,4 @@
-Curiosity26\AclHelperBundle\Entity\SecurityIdentity:
+AE\AclHelperBundle\Entity\SecurityIdentity:
     table: "acl_security_identities"
     type: entity
     readOnly: true

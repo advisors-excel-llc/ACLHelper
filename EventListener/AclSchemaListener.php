@@ -6,7 +6,7 @@
  * Time: 10:13 AM
  */
 
-namespace Curiosity26\AclHelperBundle\EventListener;
+namespace AE\AclHelperBundle\EventListener;
 
 use Doctrine\ORM\Tools\Event\GenerateSchemaEventArgs;
 use Symfony\Component\Security\Acl\Dbal\Schema;

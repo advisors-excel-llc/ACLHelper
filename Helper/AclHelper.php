@@ -6,9 +6,9 @@
  * Time: 11:22 AM
  */
 
-namespace Curiosity26\AclHelperBundle\Helper;
+namespace AE\AclHelperBundle\Helper;
 
-use Curiosity26\AclHelperBundle\QueryBuilder\AclHelperQueryBuilder;
+use AE\AclHelperBundle\QueryBuilder\AclHelperQueryBuilder;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerAwareTrait;
 use Symfony\Bridge\Doctrine\RegistryInterface;

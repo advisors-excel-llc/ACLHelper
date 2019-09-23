@@ -5,9 +5,9 @@
  * Date: 11/2/18
  * Time: 1:49 PM
  */
-namespace Curiosity26\AclHelperBundle\Tests;
+namespace AE\AclHelperBundle\Tests;
 
-use Curiosity26\AclHelperBundle\Curiosity26AclHelperBundle;
+use AE\AclHelperBundle\AEAclHelperBundle;
 use Doctrine\Bundle\DoctrineBundle\DoctrineBundle;
 use Fidry\AliceDataFixtures\Bridge\Symfony\FidryAliceDataFixturesBundle;
 use Nelmio\Alice\Bridge\Symfony\NelmioAliceBundle;
@@ -27,7 +27,7 @@ class Kernel extends \Symfony\Component\HttpKernel\Kernel
             new FidryAliceDataFixturesBundle(),
             new SecurityBundle(),
             new AclBundle(),
-            new Curiosity26AclHelperBundle(),
+            new AEAclHelperBundle(),
         ];
     }
 

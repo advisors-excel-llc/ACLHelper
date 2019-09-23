@@ -6,7 +6,7 @@
  * Time: 4:58 PM
  */
 
-namespace Curiosity26\AclHelperBundle\DependencyInjection\Configuration;
+namespace AE\AclHelperBundle\DependencyInjection\Configuration;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -16,7 +16,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $tree = new TreeBuilder();
-        $tree->root('curiosity26_acl_helper')
+        $tree->root('ae_acl_helper')
             ->children()
                 ->scalarNode('allowClassAclsDefault')
                     ->cannotBeEmpty()

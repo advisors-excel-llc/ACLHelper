@@ -1,4 +1,4 @@
-Curiosity26\AclHelperBundle\Entity\AclClass:
+AE\AclHelperBundle\Entity\AclClass:
     table: "acl_classes"
     type: entity
     readOnly: true
