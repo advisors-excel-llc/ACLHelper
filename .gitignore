@@ -62,3 +62,5 @@ composer.phar
 /phpunit.xml
 /Tests/test_db.sqlite
 /Tests/cache/
+
+.idea/
