@@ -1,5 +1,5 @@
 {
-    "name": "curiosity26/acl-helper-bundle",
+    "name": "ae/acl-helper-bundle",
     "description": "Allows direct querying for entities with ACLs implied",
     "type": "symfony-bundle",
     "require": {
@@ -18,16 +18,10 @@
         "ext-pdo_sqlite": "^7.2",
         "ocramius/proxy-manager": "^2.2"
     },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Alex Boyce",
-            "email": "curiosity26@gmail.com"
-        }
-    ],
+    "license": "proprietary",
     "autoload": {
         "psr-4": {
-            "Curiosity26\\AclHelperBundle\\": ""
+            "AE\\AclHelperBundle\\": ""
         }
     }
 }
