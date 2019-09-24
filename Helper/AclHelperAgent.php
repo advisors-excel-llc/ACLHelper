@@ -223,7 +223,7 @@ class AclHelperAgent
      * @param $field
      * @param $value
      */
-    public static function compilePredicate(Expr\Composite $predicate, QueryBuilder $qb, $prefix, $field, $value)
+    public static function compilePredicate(Expr\Composite $predicate, QueryBuilder $qb, $prefix, $field, $value, $suffix = null)
     {
         if (is_array($value)) {
             $predicate->add(self::parseComplexPredicate($qb, $prefix, $field, $value));
@@ -232,8 +232,9 @@ class AclHelperAgent
         } elseif (!$value) {
             $predicate->add("$prefix.$field IS NULL");
         } else {
-            $predicate->add("$prefix.$field = :$field");
-            $qb->setParameter(":$field", $value);
+            $fieldParam = $suffix ? $field.$suffix : $field;
+            $predicate->add("$prefix.$field = :$fieldParam");
+            $qb->setParameter(":$fieldParam", $value);
         }
     }
 
@@ -277,7 +278,8 @@ class AclHelperAgent
                 $orX = $qb->expr()->orX();
 
                 foreach ($value as $op => $v) {
-                    self::compilePredicate($orX, $qb, $prefix, $field, $v);
+                    $suffix = substr(md5(openssl_random_pseudo_bytes(20)),-20);
+                    self::compilePredicate($orX, $qb, $prefix, $field, $v, $suffix);
                 }
 
                 return $orX;
